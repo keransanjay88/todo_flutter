@@ -4,6 +4,7 @@ import 'pages/home_page.dart';
 
 void main() async {
   await Hive.initFlutter();
+  var box = await Hive.openBox('mybox');
   runApp(const MyApp());
 }
 
